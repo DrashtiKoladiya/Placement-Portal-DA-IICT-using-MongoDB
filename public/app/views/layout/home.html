@@ -1,0 +1,277 @@
+<div class="row page-titles">
+  <div class="col-md-5 align-self-center">
+    <h4 class="text-themecolor">Welcome to DAIICT Placement Portal</h4>
+  </div>
+
+  <!-- Placements -->
+  <div class="col-md-7 align-self-center text-right">
+    <div class="d-flex justify-content-end align-items-center dropdown">
+      <a
+        class="btn btn-primary dropdown-toggle"
+        href="#"
+        role="button"
+        id="dropdownMenuLink"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="ti-user"></i> &nbsp;Placement Stats
+      </a>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="/home">Placements 2020-21</a></li>
+        <li>
+          <a class="dropdown-item" href="/stats19-20">Placements 2019-20</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <!-- Open Source -->
+  <div class="col-lg-12" ng-show="!main.isLoggedIn">
+    <div class="alert alert-info">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h3 class="text-info"><i class="icon-social-github"></i> Open Source!</h3>
+      Placement Portal is open source. Be part of the community or help improve
+      the placement portal. If you want to contribute to the project and make it
+      better, your help is very welcome! <br /><br /><a
+        href="https://github.com/Pankajtanwarbanna/PlacementDAIICT"
+        target="_blank"
+        class="btn btn-primary"
+        >Star on Github</a
+      >
+    </div>
+  </div>
+
+  <!-- Redirect to feedback page -->
+  <div class="col-lg-12" ng-show="main.isLoggedIn">
+    <div class="alert alert-success">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h3 class="text-success">
+        <i class="icon-like"></i> {{ main.student_name.split(' ')[0] }}, we need
+        your feedback!
+      </h3>
+      We are constantly working on towards making the placement portal more
+      efficient and to speed up the overall service of Placement Portal to
+      ensure smooth transition. If you have a bug or a new feature in mind,
+      please share your thoughts on feedback page. We are very interested in any
+      feedback you have about using it!
+      <br /><br /><a href="/technical" class="btn btn-outline-info"
+        >Take me to the feedback page</a
+      >
+    </div>
+  </div>
+
+  <!-- Interview Experience -->
+  <!--<div class="col-lg-12" ng-show="main.isLoggedIn">
+        <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            <h3 class="text-info"><i class="icon-rocket"></i> Interview Experiences!</h3> Appeared for an interview? Share details about the interview process you have been through.. Now, you can add your placement/internship interview experience under Compose Interview Experience section to help others.
+            <br><br><a href="/interview-experiences" class="btn btn-primary">Write Now</a>
+        </div>
+    </div>-->
+  <!-- Happy New Year -->
+  <!--<div class="col-lg-12">
+        <div class="card news-slide social-profile" style="background:url(assets/images/DAIICT/happy.jpg) center center / cover;">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                &lt;!&ndash; Carousel items &ndash;&gt;
+                <div class="carousel-inner">
+                    <div class="active carousel-item">
+                        &lt;!&ndash;<div class="carousel-caption">
+                            <span class="label label-danger label-rounded">DAIICT Gandhinagar</span>
+                            <h3 class="m-t-5 font-light">Don't limit your challenges, challenge your limits.</h3>
+                        </div>&ndash;&gt;
+                    </div>
+                    <div class="carousel-item">
+                        &lt;!&ndash;<div class="carousel-caption">
+                            <span class="label label-danger label-rounded">DAIICT Gandhinagar</span>
+                            <h3 class="m-t-5 font-light">The best preparation for tomorrow is doing your best today.</h3>
+                        </div>&ndash;&gt;
+                    </div>
+                    <div class="carousel-item">
+                        &lt;!&ndash;<div class="carousel-caption">
+                            <span class="label label-danger label-rounded">DAIICT Gandhinagar</span>
+                            <h3 class="m-t-5 font-light">Believe you can and you're halfway there.</h3>
+                        </div>&ndash;&gt;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
+
+<!-- UG Placement Stats -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <h3>UG Placement Statistics 2020-2021</h3>
+            <h5 class="font-light m-t-0">Placement Cell, DAIICT Gandhinagar</h5>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th class="text-center">#</th>
+              <th>BRANCH</th>
+              <th>OFFERS</th>
+              <th>PLACED</th>
+              <th>PLACEMENT</th>
+              <th>HIGHEST</th>
+              <th>AVERAGE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">1</td>
+              <td class="txt-oflo">B.TECH (ICT)</td>
+              <td><span class="text-info">260</span></td>
+              <td class="txt-oflo">260</td>
+              <td><span class="text-info">100%</span></td>
+              <td><span class="text-success">52 LPA</span></td>
+              <td class="txt-oflo">17 LPA</td>
+            </tr>
+            <tr>
+              <td class="text-center">2</td>
+              <td class="txt-oflo">B.TECT (ICT+CS)</td>
+              <td><span class="text-info">49</span></td>
+              <td class="txt-oflo">49</td>
+              <td><span class="text-info">100%</span></td>
+              <td><span class="text-success">52 LPA</span></td>
+              <td class="txt-oflo">17 LPA</td>
+            </tr>
+            <tr>
+              <td class="text-center">3</td>
+              <td class="txt-oflo">MnC</td>
+              <td><span class="text-info">60</span></td>
+              <td class="txt-oflo">60</td>
+              <td><span class="text-info">100%</span></td>
+              <td><span class="text-success">52 LPA</span></td>
+              <td class="txt-oflo">17 LPA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PG Placement Stats -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <h3>PG Placement Statistics 2020-21</h3>
+            <h5 class="font-light m-t-0">Placement Cell, DAIICT Gandhinagar</h5>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th class="text-center">#</th>
+              <th>BRANCH</th>
+              <th>OFFERS</th>
+              <th>PLACED</th>
+              <th>HIGHEST</th>
+              <th>AVERAGE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">1</td>
+              <td class="txt-oflo">M.Tech (ICT)</td>
+              <td><span class="text-info">60</span></td>
+              <td class="txt-oflo">60</td>
+              <td><span class="text-success">52 LPA</span></td>
+              <td class="txt-oflo">17 LPA</td>
+            </tr>
+            <tr>
+              <td class="text-center">2</td>
+              <td class="txt-oflo">M.Sc (IT)</td>
+              <td><span class="text-info">60</span></td>
+              <td class="txt-oflo">60</td>
+              <td><span class="text-success">52 LPA</span></td>
+              <td class="txt-oflo">17 LPA</td>
+            </tr>
+            <tr>
+              <td class="text-center">3</td>
+              <td class="txt-oflo">M.Des</td>
+              <td><span class="text-info">60</span></td>
+              <td class="txt-oflo">60</td>
+              <td><span class="text-success">52 LPA</span></td>
+              <td class="txt-oflo">17 LPA</td>
+            </tr>
+            <!-- <tr>
+              <td class="text-center"></td>
+              <td class="txt-oflo"><b>TOTAL</b></td>
+              <td>
+                <span class="text-info"><b>95</b></span>
+              </td>
+              <td class="txt-oflo"><b>95</b></td>
+              <td>
+                <span class="text-success"><b>20.67 LPA</b></span>
+              </td>
+              <td class="txt-oflo"><b>6.97 LPA</b></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <div class="card-body">
+        <h3 class="text-center">UG + PG Package Details</h3>
+        <div class="row">
+          <div class="col-6 text-center">
+            <h5 class="font-light m-t-0"><b>Maximum</b> : 52 LPA</h5>
+          </div>
+          <div class="col-6 text-center">
+            <h5 class="font-light m-t-0"><b>Average</b> : 17 LPA</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card oh">
+          <div class="card-body bg-light">
+            <div class="row text-center m-b-20">
+              <div class="col-lg-4 col-md-4 m-t-20">
+                <h2 class="m-b-0 font-light">100</h2>
+                <span class="text-muted">Pre-Placement Offers</span>
+              </div>
+              <div class="col-lg-4 col-md-4 m-t-20">
+                <h2 class="m-b-0 font-light">250+</h2>
+                <span class="text-muted">No. of Companies Visited</span>
+              </div>
+              <div class="col-lg-4 col-md-4 m-t-20">
+                <h2 class="m-b-0 font-light">300+</h2>
+                <span class="text-muted">On-Campus Internships (UG + PG)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
